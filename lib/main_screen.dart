@@ -7,14 +7,14 @@ class MainScreen extends StatelessWidget {
   Widget build(BuildContext context) {
     List<int> numbers = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15];
 
-    return Scaffold(
+    return  Scaffold(
         // FULLSCREEN BACKGROUND IMAGE
         body: Container(
       height: double.infinity,
       width: double.infinity,
       decoration: BoxDecoration(
         image: DecorationImage(
-          image: Image.network("https://randompicturegenerator.com/img/love-generator/gf1add1df6782d30d69114eb2396e1e0d5860680bf46689941d2cec66dcdd43d7b420ecab4f45880dc0fd8e0bb0a46b8b_640.jpg").image,
+          image: AssetImage("asset/bg_startscreen.png"),
           fit: BoxFit.fill,
         ),
       ),
